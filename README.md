@@ -1,28 +1,34 @@
-# Fortify scanner with command line toggle example
+# Fortify for Scala example
 
-This project shows and example of how to setup Fortify scanning based on a
-command line flag.
+This example of how to enable or disable Fortify translation of
+Scala code using a command line flag.
 
-To compile and scan with Fortify use:
+This is typically used for leaving the Fortify plugin disabled during
+normal development, but enabling it when needed, such as in a special
+CI job.
 
-```
-sbt -DfortifyEnabled=true
-```
+## How to use it
 
-To run sbt without enabling Fortify, ie with Fortify completely disabled, you
-can either run sbt as usual with 
-
-```
-sbt
-```
-
-or if you want to be very explicit about it
+To compile your code with Fortify enabled:
 
 ```
-sbt -DfortifyEnabled=false
+sbt -DfortifyEnabled=true compile
 ```
 
-## How does it work
+If you run `sbt` without the extra flag, Fortify remains completely
+disabled.
 
-The `lightbend.sbt` file adds a new setting `fortifyEnabled` which controls
-whether the compiler plugin is added into the compilation of the configuration.
+## How it works
+
+The `fortify.sbt` file adds a new setting `fortifyEnabled` which controls
+whether the compiler plugin is added to the compile-time classpath.
+
+## Other example repos
+
+The following small sample applications contains example security
+vulnerabilities caught by Fortify:
+
+* [akka-http-webgoat](https://github.com/akka/akka-http-webgoat/tree/fortify)
+* [play-webgoat](https://github.com/playframework/play-webgoat/tree/fortify)
+
+In both repos, the Fortify configuration files are on a `fortify` branch.
