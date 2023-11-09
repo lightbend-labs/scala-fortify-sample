@@ -1,4 +1,4 @@
-# Fortify scanner with command line toggle example
+# Fortify scanner with command line toggle example 
 
 This project shows and example of how to setup Fortify scanning based on a
 command line flag.
