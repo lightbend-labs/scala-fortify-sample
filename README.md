@@ -1,7 +1,7 @@
 # Fortify + Scala + sbt
 
 This example of how to enable or disable Fortify translation of
-Scala code using a command line flag.
+Scala code in an sbt build using a command line flag.
 
 This is typically used for leaving the Fortify plugin disabled during
 normal development, but enabling it when needed, such as in a special
@@ -32,3 +32,8 @@ vulnerabilities caught by Fortify:
 * [play-webgoat](https://github.com/playframework/play-webgoat/tree/fortify)
 
 In both repos, the Fortify configuration files are on a `fortify` branch.
+
+## Documentation
+
+For full documentation on using the Fortify plugin for Scala, visit
+https://developer.lightbend.com/docs/fortify/current/
