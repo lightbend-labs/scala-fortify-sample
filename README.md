@@ -1,4 +1,4 @@
-# Fortify for Scala example
+# Fortify + Scala + sbt
 
 This example of how to enable or disable Fortify translation of
 Scala code using a command line flag.
