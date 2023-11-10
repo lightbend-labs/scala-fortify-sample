@@ -1,3 +1,2 @@
-scalaVersion := "2.13.3"
-
-name := "example"
+name := "sample"
+scalaVersion := "2.13.12"

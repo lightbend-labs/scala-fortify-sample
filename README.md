@@ -23,7 +23,7 @@ disabled.
 The `fortify.sbt` file adds a new setting `fortifyEnabled` which controls
 whether the compiler plugin is added to the compile-time classpath.
 
-## Other example repos
+## Other sample repos
 
 The following small sample applications contains example security
 vulnerabilities caught by Fortify:
