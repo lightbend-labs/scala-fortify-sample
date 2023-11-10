@@ -15,6 +15,13 @@ To compile your code with Fortify enabled:
 sbt -DfortifyEnabled=true compile
 ```
 
+If it worked, you should see output like:
+
+```
+scala-fortify ... licensed to ...@lightbend (expires: ...)
+scala-fortify: writing translated files to .../.fortify/sca.../build/sample
+```
+
 If you run `sbt` without the extra flag, Fortify remains completely
 disabled.
 
