@@ -1,4 +1,6 @@
+import sys.process._
+
 object Sample {
   def main(args: Array[String]): Unit =
-    println("hello world")
+    args(0).!  // command injection vulnerability
 }

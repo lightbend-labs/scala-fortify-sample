@@ -1,0 +1,8 @@
+[4D02548E443E641834BD816082B9E863 : critical : Command Injection : dataflow ]
+Sample.scala(5) :  ->ProcessBuilder.!(this)
+    Sample.scala(5) : <->ProcessImplicits.stringToProcess(0->return)
+    Sample.scala(4) :  ->Sample$.main(0[0])
+    Sample.scala(3) :  ->Sample.main(0)
+
+[B1DE11549CA70DBAE2151357DDC15863 : low : J2EE Bad Practices : Leftover Debug Code : structural ]
+    Sample.scala(4)
