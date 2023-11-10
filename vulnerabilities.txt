@@ -1,8 +1,11 @@
-[4D02548E443E641834BD816082B9E863 : critical : Command Injection : dataflow ]
-Sample.scala(5) :  ->ProcessBuilder.!(this)
-    Sample.scala(5) : <->ProcessImplicits.stringToProcess(0->return)
-    Sample.scala(4) :  ->Sample$.main(0[0])
-    Sample.scala(3) :  ->Sample.main(0)
+[21E60E2B831668A393932CEB49C2A6A1 : high : Insecure Randomness : semantic ]
+subproject2/src/main/scala/Sample2.scala(5) : Random.nextInt()
 
-[B1DE11549CA70DBAE2151357DDC15863 : low : J2EE Bad Practices : Leftover Debug Code : structural ]
-    Sample.scala(4)
+[CBCE82F9EBC6726C510E706E09AC0216 : critical : Command Injection : dataflow ]
+subproject1/src/main/scala/Sample1.scala(5) :  ->ProcessBuilder.!(this)
+    subproject1/src/main/scala/Sample1.scala(5) : <->ProcessImplicits.stringToProcess(0->return)
+    subproject1/src/main/scala/Sample1.scala(4) :  ->Sample1$.main(0[0])
+    subproject1/src/main/scala/Sample1.scala(6) :  ->Sample1.main(0)
+
+[BE79AAD699A3BCD5795C87E95E9B87ED : low : J2EE Bad Practices : Leftover Debug Code : structural ]
+    subproject1/src/main/scala/Sample1.scala(4)
