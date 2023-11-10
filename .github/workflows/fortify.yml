@@ -57,7 +57,7 @@ jobs:
 
     - name: Test
       run: |
-        sbt compile
+        sbt -DfortifyEnabled=true compile
         rm -f target/vulnerabilities-actual.txt
         ./Fortify/Fortify_SCA_23.1.1/bin/sourceanalyzer \
           -b sample \
