@@ -27,8 +27,9 @@ disabled.
 
 ## How it works
 
-The `fortify.sbt` file adds a new setting `fortifyEnabled` which controls
-whether the compiler plugin is added to the compile-time classpath.
+The `fortify.sbt` file adds a new sbt setting `fortifyEnabled` which
+looks at a Java system property of the same name to decide whether to
+add the plugin to the classpath and control it using compiler options.
 
 ## Other sample repos
 
