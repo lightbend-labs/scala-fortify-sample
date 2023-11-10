@@ -60,7 +60,7 @@ jobs:
         sbt compile
         rm -f target/vulnerabilities-actual.txt
         ./Fortify/Fortify_SCA_23.1.1/bin/sourceanalyzer \
-          -b akka-http-webgoat \
+          -b sample \
           -logfile target/scan.log \
           -scan \
           | tail -n +4 > target/vulnerabilities-actual.txt
