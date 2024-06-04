@@ -12,7 +12,7 @@ ThisBuild / fortifyEnabled :=
 ThisBuild / libraryDependencies ++= (
   if (fortifyEnabled.value)
     Seq(
-      compilerPlugin("com.lightbend" %% "scala-fortify" % "1.1.0"
+      compilerPlugin("com.lightbend" %% "scala-fortify" % "1.1.1-RC1"
         cross CrossVersion.patch))
   else
     Seq()
