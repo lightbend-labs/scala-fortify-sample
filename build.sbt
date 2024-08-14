@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "3.4.2"
+ThisBuild / scalaVersion := "3.5.0"
 lazy val root = project.in(file("."))
   .aggregate(subproject1, subproject2)
 lazy val subproject1 = project.in(file("subproject1"))
