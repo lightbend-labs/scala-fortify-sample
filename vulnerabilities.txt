@@ -5,6 +5,3 @@ subproject2/src/main/scala/Sample2.scala(5) : Random.nextInt()
 subproject1/src/main/scala/Sample1.scala(5) :  ->ProcessBuilder.!(this)
     subproject1/src/main/scala/Sample1.scala(5) : <->ProcessImplicits.stringToProcess(0->return)
     subproject1/src/main/scala/Sample1.scala(4) :  ->Sample1$.main(0)
-
-[BE79AAD699A3BCD5795C87E95E9B87ED : low : J2EE Bad Practices : Leftover Debug Code : structural ]
-    subproject1/src/main/scala/Sample1.scala(4)

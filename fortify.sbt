@@ -20,7 +20,7 @@ ThisBuild / libraryDependencies ++= (
 
 ThisBuild / scalacOptions ++= (
   if (fortifyEnabled.value)
-    Seq("-P:fortify:scaversion=23.1", "-P:fortify:build=sample")
+    Seq("-P:fortify:scaversion=24.2", "-P:fortify:build=sample")
   else
     Seq()
 )
