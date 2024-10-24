@@ -44,4 +44,4 @@ In both repos, the Fortify configuration files are on a `fortify` branch.
 ## Documentation
 
 For full documentation on using the Fortify plugin for Scala, visit:
-http://developer.lightbend.com/guides/fortify
+https://developer.lightbend.com/guides/fortify
